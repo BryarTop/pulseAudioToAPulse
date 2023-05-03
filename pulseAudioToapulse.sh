@@ -74,7 +74,7 @@ if [[ ! -d ~/linux-build ]]; then
   mkdir ~/linux-build
 fi
 cd ~/linux-build
-https://linux.die.net/man/8/apt-get
+https://linux.die.net/man/8/dnf
 # Download kernel commandline
 export USB_ROOTFS=$(sudo blkid -o value -s PARTUUID $USB_ROOTFS)
 bash <(curl -s https://raw.githubusercontent.com/cb-linux/breath/main/kernel.flags.sh) > kernel.flags
